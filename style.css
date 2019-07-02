@@ -1,0 +1,321 @@
+/*********************/
+/*** style global ***/
+/*********************/
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(168, 142, 120);
+  font-family: 'Lato', sans-serif;
+}
+
+#page {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/*****************************/
+/*** style général balises ***/
+/*****************************/
+
+/* HEADER */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffc107;
+}
+
+/* NAV */
+nav {
+    font-weight: 400;
+}
+
+nav > ul {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+  
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+footer > ul > li {
+    padding: 0 10px;
+}
+  
+footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
+
+/*****************************/
+/*** style CLASS *************/
+/*****************************/
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.grille {
+  display: flex;
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.produit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%  / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+  
+.produit > .niveau {
+    background-color: rgb(144, 185, 201);
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+  
+.produit > h2 {
+    margin-top: 15px;
+}
+  
+.produit > ol {
+    margin: 15px 0;
+}
+  
+.produit > ol > li {
+    padding: 5px 0;
+}
+  
+.produit > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+
+.produit > button:hover {
+    background-color: orange;
+    transition: background-color 1s;
+}
+
+/*****************************/
+/*** style ID ****************/
+/*****************************/
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
+
+#contact > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#contact input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#contact input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+#propos {
+  margin-top: 30px;
+}
+
+#propos .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: #ffc107;
+}
+
+#propos .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+#fonctionnement {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#fonctionnement > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+#tarifs {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/**************************/
+/***** MEDIAS QUERIES *****/
+/**************************/
+
+/**************/
+/*** 800 px ***/
+/**************/
+@media (max-width: 800px) {
+#tarifs {
+  flex-direction: column;
+}
+.produit {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+}
+
+/**************/
+/*** 650 px ***/
+/**************/
+@media (max-width: 650px) {
+#propos {
+  margin-top: 0;
+}
+#contact {
+  margin-top: 120px;
+}
+nav > ul {
+  flex-direction: column;
+}
+nav {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 50px;
+}
+nav li {
+  padding-bottom: 5px;
+}
+.logo > img {
+  margin: 0 auto;
+}
+.logo {
+  margin-top: 15px;
+  width: 100%;
+  position: relative;
+}
+}
+
+/**************/
+/*** 600 px ***/
+/**************/
+@media (max-width: 600px) {
+header {
+  flex-wrap: wrap;
+}
+}
+
+/**************/
+/*** 550 px ***/
+/**************/
+@media (max-width: 550px) {
+#propos .desc {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  height: 150px;
+}
+#propos .icon {
+  display: none;
+}
+.logo > img {
+  max-width: 40px;
+}
+}

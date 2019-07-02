@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>FCC-Landing page</title>
+</head>
+
+<body>
+  <div id="page">
+    <!-- HEADER -->
+    <header id="header">
+      <!-- #1 -->
+      <div class="logo">
+        <img id="header-img" src="https://pics.clipartpng.com/Black_High_Sneakers_PNG_Clipart-376-376.png" alt="Les baskets fait maison" /><!-- #2 -->
+      </div>
+      <!-- navigation -->
+      <nav id="nav-bar">
+        <!-- #3 -->
+        <ul>
+          <li><a class="nav-link" href="#propos">A propos</a></li><!-- #4 & 5 -->
+          <li><a class="nav-link" href="#fonctionnement">Notre fonctionnement</a></li><!-- #4 & 5 -->
+          <li><a class="nav-link" href="#tarifs">Nos tarifs</a></li><!-- #4 & 5-->
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SECTION CONTACT -->
+    <div class="container">
+      <section id="contact">
+        <h2>Des baskets faites à la main avec de bons matériaux</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <!-- #7 & 12 -->
+          <input name="email" id="email" type="email" placeholder="Entrez votre adresse email" required />
+          <!-- #8 & 9 -->
+          <input id="submit" type="submit" value="C'est parti !" class="btn" /><!-- #11 -->
+        </form>
+      </section>
+    </div>
+
+    <!-- SECTION A PROPOS -->
+    <div class="container">
+      <section id="propos">
+        <div class="grille">
+          <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+          <div class="description">
+            <h2>Matières premières</h2>
+            <p>
+              Nos baskets sont fabriquées avec le cuir de la plus haute qualité pour des chaussures.<br>
+              Ce qui augmente durablement la longévité de vos baskets.
+            </p>
+          </div>
+        </div>
+        <div class="grille">
+          <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+          <div class="description">
+            <h2>Livraison rapide</h2>
+            <p>
+              Nous veillons à ce que vous receviez vos chaussures dès la fin de la fabrication.<br>
+              Nous fournissons également des retours gratuits si vous n'êtes pas satisfait.
+            </p>
+          </div>
+        </div>
+        <div class="grille">
+          <div class="icon">
+            <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+          </div>
+          <div class="description">
+            <h2>Assurance qualité</h2>
+            <p>
+              Pour chaque achat que vous faites, nous nous assurerons qu'il n'y a aucun dommage ou défaut.<br>
+              Nous vérifions et testons également vos baskets avant expédition.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION NOTRE FONCTIONNEMENT -->
+      <section id="fonctionnement">
+        <iframe id="video" height="315"
+          src="https://www.youtube.com/embed/P_FtxEEkjhA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"
+          allowfullscreen>
+        </iframe><!-- #6 -->
+      </section>
+
+      <!-- SECTION NOS TARIFS -->
+      <section id="tarifs">
+        <div class="produit" id="classique">
+          <div class="niveau">Paire classique</div>
+          <h2>$100</h2>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Commander</button>
+        </div>
+        <div class="produit" id="Medium">
+          <div class="niveau">Paire medium</div>
+          <h2>$300</h2>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Commander</button>
+        </div>
+        <div class="produit" id="Luxe">
+          <div class="niveau">Paire Luxe</div>
+          <h2>$1200</h2>
+          <ol>
+            <li>Paire de chaussures réalisées</li>
+            <li>sur mesure.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Commander</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <ul>
+        <li><a href="#">Privé</a></li>
+        <li><a href="#">Termes</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2019, Baskets fait maison</span>
+    </footer>
+  </div>
+  </div>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
